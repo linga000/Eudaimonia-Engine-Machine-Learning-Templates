@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STARTUP PROPHET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body text="#fff" class="i">
+    <button class="pr" onclick="window.location.href='/'">Back</button> 
+    <div class="startup">
+        <h1 align="center">ENTER CLASSIFICATION DETAILS HERE</h1>
+        <hr/>
+        <form action="{{ url_for('submit') }}" method="POST" align="center">
+            <label for="infoavail">Information Availability:</label>
+        <input type="text" id="infoavail" name="infoavail"><br><br>
+        
+        <label for="housecost">House Cost:</label>
+        <input type="text" id="housecost" name="housecost"><br><br>
+        
+        <label for="schoolquality">School Quality:</label>
+        <input type="text" id="schoolquality" name="schoolquality"><br><br>
+        
+        <label for="policetrust">Police Trust:</label>
+        <input type="text" id="policetrust" name="policetrust"><br><br>
+        
+        <label for="streetquality">Street Quality:</label>
+        <input type="text" id="streetquality" name="streetquality"><br><br>
+        
+        <label for="events">Events:</label>
+        <input type="text" id="events" name="events"><br><br>
+            <button class="pr" onclick="window.location.href=' http://127.0.0.1:5000/submit'" type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
